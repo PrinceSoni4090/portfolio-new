@@ -23,10 +23,10 @@ const Navbar = () => {
                     </div>
                 </Link>
                 <div className='hidden md:flex space-x-4 items-center'>
-                    <Link href="/" className="hover:underline">Home</Link>
-                    <Link href="/blog" className="hover:underline">Blog</Link>
-                    <Link href="/about" className="hover:underline">About</Link>
-                    <Link href="/contact" className="hover:underline">Contact</Link>
+                    <Link href="/" className="hover:scale-105 hover:font-semibold transition-transform duration-300">Home</Link>
+                    <Link href="/blog" className="hover:scale-105 hover:font-semibold transition-transform duration-300">Blog</Link>
+                    <Link href="/about" className="hover:scale-105 hover:font-semibold transition-transform duration-300">About</Link>
+                    <Link href="/contact" className="hover:scale-105 hover:font-semibold transition-transform duration-300">Contact</Link>
                     <div className="flex items-center">
                         <Button className="mx-1 text-xs" variant="outline">Login</Button>
                         <Button className="mx-1 text-xs" variant="outline">Signup</Button>
@@ -36,13 +36,16 @@ const Navbar = () => {
 
                 <div className="md:hidden">
                     <Sheet>
+                    <spam className="mx-4">
+                            <ModeToggle />
+                        </spam>
                         <SheetTrigger>
 
                             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                             </svg>
-
                         </SheetTrigger>
+                        
 
 
                         <SheetContent>
