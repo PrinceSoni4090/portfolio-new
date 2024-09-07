@@ -1,11 +1,315 @@
 import Navbar from "@/components/Navbar";
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <main>
-     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit dolor expedita voluptatem ab, quibusdam fugit optio maiores consectetur voluptas deserunt ipsum doloribus eius natus officia laboriosam, quaerat, nesciunt quo magni tempora nulla commodi ducimus sit totam. Hic, quisquam doloremque nesciunt magnam cupiditate nulla tenetur possimus minus corrupti labore quo, fugiat officiis, sit sint aspernatur blanditiis voluptatibus veritatis impedit repellat exercitationem. Quam eveniet recusandae consectetur repudiandae, cupiditate inventore est optio aperiam quibusdam odio nihil, maxime minima aliquam in assumenda vitae similique eaque officiis eos et modi nobis praesentium. Vel impedit veritatis aspernatur deleniti assumenda nobis hic voluptatum. Aperiam, accusantium expedita! Nisi nihil quam sit fugit aliquid similique eos magnam quisquam assumenda, sunt ratione, nobis, nulla minima distinctio accusantium ad cum iure natus? Sed minima omnis id vitae quos, dignissimos impedit architecto blanditiis esse nihil modi saepe eligendi unde, totam sequi culpa adipisci est. Dicta exercitationem sit magni quis ab, non deleniti iste, eveniet consectetur ipsum officia officiis totam quia atque ullam dolorum, nihil aliquid sapiente incidunt praesentium facere! Ut exercitationem deserunt cumque vero error, ullam qui eum alias dolore quod odio ex cum adipisci iusto sit dolorum doloremque incidunt quia minus! Rerum ducimus aliquid repellat error reprehenderit, soluta velit commodi dolores praesentium sapiente excepturi modi temporibus ipsa quo accusamus porro cupiditate, optio eius aspernatur assumenda ipsum culpa voluptates ullam? Ea tempore libero rerum laboriosam necessitatibus? Fugit, ullam sed, velit reprehenderit aspernatur asperiores hic nostrum ex doloremque minima neque odit sit perspiciatis eum voluptates libero sunt placeat dolore harum totam consequuntur veniam. Sapiente autem nostrum deserunt atque placeat beatae iste, incidunt veritatis quae at obcaecati quidem, corporis nemo temporibus ea aut voluptatibus, sint magni vero veniam explicabo assumenda minima! At, sit? Expedita, quibusdam minus. Modi, quam sunt dolorum cupiditate doloribus tenetur animi voluptatibus eveniet consequatur, expedita quia eligendi provident inventore, doloremque ex id. Dignissimos ad temporibus perspiciatis quia optio incidunt laudantium hic fugit quam rerum eaque exercitationem eius magni deleniti odit omnis vel repellat in molestias, earum, necessitatibus facere? At nesciunt, suscipit voluptatem ut rerum, expedita quas doloribus facere veritatis beatae excepturi molestiae repellat vero omnis culpa illo hic iusto animi facilis dolores? Vel modi officiis dolores voluptatum molestiae tempore iste et eveniet consequatur ab deserunt facilis, sunt reprehenderit impedit labore quis iusto esse maiores, minima repellendus hic harum, expedita quidem. Quod exercitationem dolore assumenda dignissimos corporis nam praesentium nostrum tempora placeat facere ratione ea facilis cupiditate voluptatibus esse eveniet perferendis tempore consectetur necessitatibus optio, laboriosam, blanditiis quae! Reprehenderit, reiciendis nostrum aliquid ipsum temporibus sint unde nulla, rerum dicta voluptates repellat magnam! Dolores deserunt odio optio. Quas, officiis rerum! Omnis iure nemo vero delectus doloribus! Fugiat debitis voluptatem nisi nostrum esse nam quaerat consequatur unde labore officiis soluta obcaecati pariatur temporibus quasi laudantium animi impedit est, porro autem. Repudiandae, eos consequatur aspernatur impedit quam temporibus commodi laboriosam accusamus enim esse, dolor in expedita distinctio ducimus itaque corrupti velit perspiciatis cum quis quo animi. Recusandae corrupti perferendis quibusdam impedit ea! Voluptas quas aperiam optio veritatis, ipsam minima accusantium, nam velit deserunt assumenda perspiciatis aliquid quia, labore distinctio commodi. Temporibus, ducimus! Sint ab eaque voluptate! Eos magni iure quasi, aut voluptatum nam? Sit nostrum saepe nemo qui quidem cum molestiae quas labore nobis praesentium, dignissimos odit quod? Non, perferendis. Laborum rem qui fugiat vitae incidunt repudiandae ducimus, ullam exercitationem voluptate doloremque facilis minima error esse quas. Deserunt harum eligendi quo blanditiis totam ea repellat voluptatem doloribus, tenetur deleniti, obcaecati perspiciatis omnis natus, odio dignissimos enim! Quisquam optio dolorum laudantium eum nulla odio, ipsa dignissimos pariatur repellendus eveniet quasi placeat, voluptatibus nesciunt, qui dolores hic ratione doloremque! Perspiciatis voluptatem, assumenda aut reiciendis cum quo molestias quod quam pariatur tenetur impedit voluptatibus laudantium sapiente aspernatur eius at eveniet. Qui, temporibus officiis eius repellat fugiat rerum neque, omnis illo non facere impedit nisi voluptatem laborum sed nemo maiores aliquam numquam. Delectus culpa sit aperiam sapiente distinctio tempora ipsam doloribus enim, quos, facilis, exercitationem quo ad voluptates dolorum cumque quia! Dolore doloribus id alias. Ut tempore eos non aliquam! Doloremque corrupti natus ad. Ipsam natus iste praesentium doloremque sed ea dicta illo magni nesciunt aliquam. Facere quo, at maiores atque provident quos quis cumque sint ratione iure, assumenda quisquam possimus ipsam nostrum dolorum voluptatum ipsa facilis, obcaecati accusantium? Inventore blanditiis rem corporis eius dicta molestiae ab praesentium sapiente aliquam, deserunt nisi aliquid rerum, et sed fugit, officia atque. Natus at tempora molestias ad exercitationem ipsam impedit necessitatibus quae ullam similique magnam pariatur quos, voluptas cumque quibusdam facere aliquam quisquam assumenda ducimus nostrum recusandae? Blanditiis ab similique architecto consequatur asperiores fugit iure sint? Enim, ipsam dicta? Magni nobis voluptatem odio maxime aperiam, similique, sit consectetur numquam odit harum nihil facilis itaque sint voluptate repellendus quos at modi praesentium maiores, dolorem quod aspernatur commodi reiciendis tempore? Odit ex omnis, nostrum dolore non commodi blanditiis delectus reprehenderit libero enim quibusdam soluta aspernatur consequatur quo vitae, odio, rerum ea? A saepe aperiam modi ex tenetur fugiat ipsum ratione odio. Quam nemo error molestias atque repellat, harum dolores maxime necessitatibus dolor eaque voluptatem est quisquam pariatur rem placeat. Explicabo officia debitis molestias quia cumque sed recusandae quisquam, saepe minima nemo similique tempora id, ab cupiditate asperiores nihil libero. Dolorem odit minus perspiciatis. Eligendi veritatis corporis pariatur debitis omnis hic. Adipisci ratione sed est doloremque necessitatibus quaerat eligendi corrupti aperiam, recusandae quae quibusdam dolores? Delectus culpa veritatis odit explicabo aperiam recusandae id voluptatum! Facilis iusto incidunt quae doloribus quam ipsum in nam libero laboriosam cupiditate, animi neque, autem ratione quis, voluptatem rem! Totam officia, harum nostrum consectetur nobis culpa! Debitis sapiente officia maiores reiciendis. Dolores accusantium, laudantium consequuntur sapiente labore ducimus nesciunt neque, rerum pariatur amet blanditiis earum laboriosam dolore ipsa eligendi repellat iure aliquam ex dolorum ipsum magni minus. Eum, aut! Blanditiis deleniti, voluptates laboriosam architecto totam soluta maiores similique nobis atque pariatur animi ipsa mollitia quibusdam error at ut excepturi voluptatum esse eveniet. Magnam dicta excepturi quam nostrum earum, iste ex temporibus. Tenetur est itaque fugit ipsam voluptatibus nam, non veniam voluptatum alias necessitatibus! Qui molestiae, facilis tenetur facere nam tempora?
-     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt earum dolore reiciendis et aut eveniet tempore voluptas doloremque, voluptates aperiam! Commodi ipsam mollitia illum aspernatur ex nam laudantium, rerum officia similique, sunt a, provident consectetur deleniti? Error qui assumenda ratione nulla, nam odit ea praesentium asperiores iusto voluptatibus optio, dicta id adipisci pariatur hic dolore sit inventore, eos debitis saepe tempora ab! Sed, libero eligendi iure quidem eveniet natus nesciunt quae alias ipsa sunt ab itaque animi aliquid ipsum earum id quibusdam. Velit, libero, nesciunt recusandae beatae dolorem, dolor aspernatur voluptatum quos voluptate doloremque consequatur reiciendis eligendi dolores sunt. Quod odit blanditiis consectetur temporibus ea saepe quia? Cum odit repudiandae neque dicta dolore deleniti velit natus fuga cupiditate impedit omnis praesentium error incidunt ex quod qui, voluptatibus ut suscipit nemo veniam! Provident debitis laborum doloribus eius, nesciunt numquam blanditiis libero fuga vitae nemo at tempore doloremque modi, sint aperiam incidunt asperiores inventore maxime id repellendus. Error eos vitae adipisci nam possimus eveniet accusantium ex ipsum quam. Quaerat non, laborum a necessitatibus sunt similique esse labore aliquid dignissimos repellat sed quasi nam, repudiandae sint deserunt vero veritatis! In, dolore impedit maxime eligendi nemo unde minima voluptatibus consequatur deleniti mollitia iusto at, omnis ab perspiciatis possimus? Ipsa magni cumque ullam autem unde molestiae quasi deserunt accusantium error dolor aliquam, explicabo dolore. Nulla, ut dolorum perspiciatis eveniet libero assumenda sed consequatur earum facere cupiditate! Earum, iste odit minus libero, corrupti sequi atque quisquam veniam iure aspernatur, recusandae quia? Mollitia unde nobis quasi, maiores repellendus quisquam, inventore iste quibusdam culpa eum voluptatem explicabo suscipit maxime adipisci at neque nihil quo quis doloremque ipsum officiis asperiores? Itaque illum, placeat aliquam fuga voluptates excepturi cum saepe laborum quas expedita officiis neque exercitationem velit dolorem esse, culpa nam consectetur magni sed aut reprehenderit similique quia deserunt! Laborum, officia et asperiores deleniti similique voluptates nostrum magni. Beatae laudantium dolores esse ipsam quas vel, magni ea qui iusto non necessitatibus harum temporibus iure? Iste, blanditiis. Fuga, voluptatibus deserunt animi sit enim eveniet ullam asperiores libero perspiciatis natus dolorum sapiente provident odio, aliquam necessitatibus id praesentium quas dolore consequatur. Iusto dicta atque voluptatibus aut, molestias sunt odio iure molestiae? Voluptatem, velit odio, alias inventore rem similique nemo assumenda maiores porro tenetur reiciendis minima, accusamus id esse. Vitae, non pariatur ullam suscipit sit modi? Ipsam reprehenderit, at repudiandae tempore itaque aliquid dolore et iure facere eius quae quas! Corporis, repudiandae sequi! Necessitatibus hic quo omnis distinctio sequi soluta quidem explicabo nulla delectus veritatis nostrum placeat, error officiis voluptatum temporibus harum nihil, blanditiis accusamus. Ab voluptatum suscipit praesentium. Dolore laudantium ex consectetur error ad nostrum assumenda dicta. Eius, incidunt id? Error distinctio ut iure consequuntur aperiam et veniam reprehenderit doloremque beatae deleniti facilis dolore eos, laboriosam obcaecati autem, minus alias praesentium optio nulla harum sed temporibus. In dolor dolorum fugit amet non magnam doloribus maxime soluta quae commodi laudantium, harum dolore corporis quibusdam, nemo optio cumque. Assumenda, eius hic! Ratione pariatur animi beatae cumque nulla, eius labore corporis repellendus a eveniet nemo aperiam consectetur atque eum vero est quasi natus nostrum voluptatum rerum? Quam non consequuntur eaque doloribus dolorum vero laborum? Reiciendis delectus corrupti, laudantium minus explicabo doloribus iste debitis! Exercitationem quo vitae earum sint. Illum consequatur amet quasi ullam unde nulla praesentium dignissimos quod numquam blanditiis odit facere iste sit, quam architecto reiciendis ducimus tenetur cupiditate placeat voluptates. Labore tempora fuga adipisci necessitatibus neque consequatur molestiae, magnam placeat cupiditate suscipit libero officia illo amet inventore minus cumque eos ducimus enim quo, laborum nostrum quibusdam magni eveniet. Reiciendis veritatis magnam explicabo corrupti cum cumque quod repellendus voluptatum, porro delectus! Perferendis, soluta?
+      <section className="container px-4 py-10 mx-auto lg:h-128 lg:space-x-8 lg:flex lg:items-center">
+        <div className="w-full text-center lg:text-left lg:w-1/2 lg:-mt-8">
+          <h1 className="text-3xl leading-snug text-gray-800 dark:text-gray-200 md:text-4xl">
+            Prince Soni
+          </h1>
+          <p className="mt-4 text-lg text-gray-500 dark:text-gray-300">
+            a Full Stack Developer skilled in Next JS, React JS, typeScript. My expertise includes building responsive, high-quality web applications and managing databases. I have a strong foundation in deploying live projects, writing clean code, and following best practices. Currently, I’m seeking new opportunities to contribute to a dynamic team and deliver outstanding web solutions.
+
+          </p>
+        </div>
+        <div className="w-full mt-4 lg:mt-0 lg:w-1/2">
+          <Image
+            src="/HeroImage1.jpg"
+            alt="John Doe"
+            width={500}
+            height={500}
+            className="w-full h-full max-w-md mx-auto border-2 border-purple-500 rounded-full"
+          />
+        </div>
+      </section>
+
+      <section className="py-12 bg-gray-100 dark:bg-gray-900">
+        <div className="container px-4 mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-800 dark:text-gray-200">Pricing Plans</h2>
+            <p className="mt-4 text-lg text-gray-500 dark:text-gray-300">Choose the plan that suits you best</p>
+          </div>
+          <div className="flex flex-wrap justify-center">
+            {/* Basic Plan */}
+            <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
+              <div className="p-6 bg-white rounded-lg shadow-lg dark:bg-gray-800 transform transition duration-500 hover:scale-105 text-center">
+                <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">Basic</h3>
+                <p className="mt-4 text-gray-500 dark:text-gray-300">$10/month</p>
+                <ul className="mt-6 mb-6 space-y-4">
+                  <li className="text-gray-600 dark:text-gray-400"><s>10GB Storage</s></li>
+                  <li className="text-gray-600 dark:text-gray-400"><s>Basic Support</s></li>
+                  <li className="text-gray-600 dark:text-gray-400"><s>Single User</s></li>
+                  <li className="text-gray-600 dark:text-gray-400">Community Access</li>
+                  <li className="text-gray-600 dark:text-gray-400">Weekly Updates</li>
+                </ul>
+                <Button className="mx-1" variant="outline">Choose Plan</Button>
+              </div>
+            </div>
+            {/* Standard Plan */}
+            <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
+              <div className="p-6 bg-white rounded-lg shadow-lg dark:bg-gray-800 transform transition duration-500 hover:scale-105 text-center border-2 border-purple-500">
+                <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">Standard</h3>
+                <p className="mt-4 text-gray-500 dark:text-gray-300">$20/month</p>
+                <span className="inline-block px-3 py-1 text-sm font-semibold text-white bg-purple-500 rounded-full">Bestseller</span>
+                <ul className="mt-6 mb-6 space-y-4">
+                  <li className="text-gray-600 dark:text-gray-400">50GB Storage</li>
+                  <li className="text-gray-600 dark:text-gray-400">Priority Support</li>
+                  <li className="text-gray-600 dark:text-gray-400">Up to 5 Users</li>
+                  <li className="text-gray-600 dark:text-gray-400">Community Access</li>
+                  <li className="text-gray-600 dark:text-gray-400">Daily Updates</li>
+                </ul>
+                <Button className="mx-1" variant="outline">Choose Plan</Button>
+              </div>
+            </div>
+            {/* Premium Plan */}
+            <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
+              <div className="p-6 bg-white rounded-lg shadow-lg dark:bg-gray-800 transform transition duration-500 hover:scale-105 text-center">
+                <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">Premium</h3>
+                <p className="mt-4 text-gray-500 dark:text-gray-300">$30/month</p>
+                <ul className="mt-6 mb-6 space-y-4">
+                  <li className="text-gray-600 dark:text-gray-400">200GB Storage</li>
+                  <li className="text-gray-600 dark:text-gray-400">24/7 Support</li>
+                  <li className="text-gray-600 dark:text-gray-400">Unlimited Users</li>
+                  <li className="text-gray-600 dark:text-gray-400">Community Access</li>
+                  <li className="text-gray-600 dark:text-gray-400">Real-time Updates</li>
+                </ul>
+                <Button className="mx-1" variant="outline">Choose Plan</Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section className="py-12 bg-white dark:bg-gray-800">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-semibold text-gray-800 dark:text-gray-200 animate-fade-in">Our Features</h2>
+            <p className="mt-4 text-lg text-gray-500 dark:text-gray-300 animate-fade-in">Discover what makes us unique</p>
+          </div>
+          <div className="flex flex-wrap justify-center">
+            {/* <!-- Feature 1 --> */}
+            <div className="w-full max-w-sm mx-4 my-4 bg-gray-100 rounded-lg shadow-lg dark:bg-gray-700 transform transition-transform duration-500 hover:scale-105">
+              <div className="p-6">
+                <div className="flex items-center justify-center mb-4">
+                  <svg className="w-12 h-12 text-primary animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3"></path>
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 animate-fade-in">Feature One</h3>
+                <p className="mt-4 text-gray-500 dark:text-gray-300 animate-fade-in">Description of feature one.</p>
+              </div>
+            </div>
+            {/* <!-- Feature 2 --> */}
+            <div className="w-full max-w-sm mx-4 my-4 bg-gray-100 rounded-lg shadow-lg dark:bg-gray-700 transform transition-transform duration-500 hover:scale-105">
+              <div className="p-6">
+                <div className="flex items-center justify-center mb-4">
+                  <svg className="w-12 h-12 text-primary animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3"></path>
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 animate-fade-in">Feature Two</h3>
+                <p className="mt-4 text-gray-500 dark:text-gray-300 animate-fade-in">Description of feature two.</p>
+              </div>
+            </div>
+            {/* <!-- Feature 3 --> */}
+            <div className="w-full max-w-sm mx-4 my-4 bg-gray-100 rounded-lg shadow-lg dark:bg-gray-700 transform transition-transform duration-500 hover:scale-105">
+              <div className="p-6">
+                <div className="flex items-center justify-center mb-4">
+                  <svg className="w-12 h-12 text-primary animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3"></path>
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 animate-fade-in">Feature Three</h3>
+                <p className="mt-4 text-gray-500 dark:text-gray-300 animate-fade-in">Description of feature three.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section className="py-12 bg-gray-50 dark:bg-gray-900">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-semibold text-gray-800 dark:text-gray-200 animate-fade-in">Top Projects</h2>
+            <p className="mt-4 text-lg text-gray-500 dark:text-gray-300 animate-fade-in">A showcase of my best work</p>
+          </div>
+          <div className="flex flex-wrap justify-center">
+            {/* <!-- Project 1 --> */}
+            <div className="w-full max-w-sm mx-4 my-4 bg-white rounded-lg shadow-lg dark:bg-gray-800 transform transition-transform duration-500 hover:scale-105">
+              <div className="p-6">
+                <div className="flex items-center justify-center mb-4">
+                  <Image
+                    src="/CloudifyM.png"
+                    alt="John Doe"
+                    width={500}
+                    height={500}
+                  />
+                </div>
+                <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 animate-fade-in">Cloudify Media - AI Saas tool</h3>
+                <div className="flex flex-wrap justify-center gap-2 mt-4">
+                  <span className="text-xs bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full px-2 py-1">TypeScript</span>
+                  <span className="text-xs bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full px-2 py-1">NextJS</span>
+                  <span className="text-xs bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full px-2 py-1">React</span>
+                  <span className="text-xs bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full px-2 py-1">Neon DB</span>
+                  <span className="text-xs bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full px-2 py-1">Prisma</span>
+                  <span className="text-xs bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full px-2 py-1">Shadcn</span>
+                  <span className="text-xs bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full px-2 py-1">Clerk</span>
+                  <span className="text-xs bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full px-2 py-1">Daisy UI</span>
+                </div>
+                <p className="mt-4 text-gray-500 dark:text-gray-300 animate-fade-in">I developed an AI SaaS tool named CloudifyMedia focused on media compression and content-aware cropping. The tool features AI-powered image cropping tailored to various social media formats, ensuring optimal visual presentation. I utilized Prisma ORM and Neon DB for database management and querying.</p>
+                <div className="mt-4 flex justify-center space-x-4">
+                  <Button className="mx-1 gap-3" variant="outline">
+                    <a href="https://saas-six-iota.vercel.app/home">View live app</a>
+                  </Button>
+                  <Button className="mx-1 gap-3" variant="outline">
+                    <a href="https://github.com/PrinceSoni4090/saas">View Code</a>
+                  </Button>
+                </div>
+              </div>
+            </div>
+            {/* <!-- Project 2 --> */}
+            <div className="w-full max-w-sm mx-4 my-4 bg-white rounded-lg shadow-lg dark:bg-gray-800 transform transition-transform duration-500 hover:scale-105">
+              <div className="p-6">
+                <div className="flex items-center justify-center mb-4">
+                  <Image
+                    src="/MysteryM.png"
+                    alt="John Doe"
+                    width={500}
+                    height={500}
+                  />
+                </div>
+                <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 animate-fade-in">Mystery Message</h3>
+                <div className="flex flex-wrap justify-center gap-2 mt-4">
+                  <span className="text-xs bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full px-2 py-1">TypeScript</span>
+                  <span className="text-xs bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full px-2 py-1">NextJS</span>
+                  <span className="text-xs bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full px-2 py-1">React</span>
+                  <span className="text-xs bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full px-2 py-1">Zod</span>
+                  <span className="text-xs bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full px-2 py-1">MOngoDB</span>
+                  <span className="text-xs bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full px-2 py-1">Shadcn</span>
+                  <span className="text-xs bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full px-2 py-1">Next Auth</span>
+                  
+                </div>
+                <p className="mt-4 text-gray-500 dark:text-gray-300 animate-fade-in">Developed Mystery Mail, a full-stack anonymous messaging web application using TypeScript, NextJS, and React. The project features secure authentication via NextAuth, with MongoDB managing scalable data storage for user messages. I integrated Zod for robust schema validation, ensuring data integrity.</p>
+                <div className="mt-4 flex justify-center space-x-4">
+                  <Button className="mx-1 gap-3" variant="outline">
+                    <a href="https://mystrymessage-a6je.vercel.app/">View live app</a>
+                  </Button>
+                  <Button className="mx-1 gap-3" variant="outline">
+                    <a href="https://github.com/PrinceSoni4090/mystrymessage">View Code</a>
+                  </Button>
+                </div>
+              </div>
+            </div>
+            {/* <!-- Project 3 --> */}
+            <div className="w-full max-w-sm mx-4 my-4 bg-white rounded-lg shadow-lg dark:bg-gray-800 transform transition-transform duration-500 hover:scale-105">
+              <div className="p-6">
+                <div className="flex items-center justify-center mb-4">
+                  <Image
+                    src="/PostSpace2.png"
+                    alt="John Doe"
+                    width={500}
+                    height={500}
+                  />
+                </div>
+                <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 animate-fade-in">Post Space</h3>
+                <div className="flex flex-wrap justify-center gap-2 mt-4">
+                  
+                  
+                  <span className="text-xs bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full px-2 py-1">React</span>
+                  <span className="text-xs bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full px-2 py-1">Redux</span>
+                  <span className="text-xs bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full px-2 py-1">Appwrite</span>
+                  <span className="text-xs bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full px-2 py-1">Tailwind Css</span>
+                  <span className="text-xs bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full px-2 py-1">Express</span>
+                  <span className="text-xs bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full px-2 py-1">Tailwind css</span>
+                </div>
+                <p className="mt-4 text-gray-500 dark:text-gray-300 animate-fade-in">Developed a full-stack web application using React, leveraging Appwrite for backend services, database management, and robust authentication and authorization. Implemented state management with Redux Toolkit and integrated a real-time text editor for posts and blogs.</p>
+                <div className="mt-4 flex justify-center space-x-4">
+                  <Button className="mx-1 gap-3" variant="outline">
+                    <a href="https://post-space.vercel.app/">View live app</a>
+                  </Button>
+                  <Button className="mx-1 gap-3" variant="outline">
+                    <a href="https://github.com/PrinceSoni4090/Post-Space">View Code</a>
+                  </Button>
+                </div>
+              </div>
+            </div>
+            <div className="w-full max-w-sm mx-4 my-4 bg-white rounded-lg shadow-lg dark:bg-gray-800 transform transition-transform duration-500 hover:scale-105">
+              <div className="p-6">
+                <div className="flex items-center justify-center mb-4">
+                  <Image
+                    src="/UI.png"
+                    alt="John Doe"
+                    width={500}
+                    height={500}
+                  />
+                </div>
+                <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 animate-fade-in">Music School UI</h3>
+                <div className="flex flex-wrap justify-center gap-2 mt-4">
+                  
+                  <span className="text-xs bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full px-2 py-1">NextJS</span>
+                  <span className="text-xs bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full px-2 py-1">React</span>
+                  
+                  
+                  <span className="text-xs bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full px-2 py-1">Aceternity UI</span>
+                  
+                  
+                </div>
+                <p className="mt-4 text-gray-500 dark:text-gray-300 animate-fade-in">Developed the frontend UI using NextJS and React, creating responsive layouts with a modern, visually appealing interface. I utilized Aceternity UI and Shadcn to enhance the design.</p>
+                <div className="mt-4 flex justify-center space-x-4">
+                  <Button className="mx-1 gap-3" variant="outline">
+                    <a href="https://deployed-project1.com">View live app</a>
+                  </Button>
+                  <Button className="mx-1 gap-3" variant="outline">
+                    <a href="https://github.com/username/project1">View Code</a>
+                  </Button>
+                </div>
+              </div>
+            </div>
+            <div className="w-full max-w-sm mx-4 my-4 bg-white rounded-lg shadow-lg dark:bg-gray-800 transform transition-transform duration-500 hover:scale-105">
+              <div className="p-6">
+                <div className="flex items-center justify-center mb-4">
+                  <Image
+                    src="/PassM2.png"
+                    alt="John Doe"
+                    width={500}
+                    height={500}
+                  />
+                </div>
+                <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 animate-fade-in">Pass Manager</h3>
+                <div className="flex flex-wrap justify-center gap-2 mt-4">
+                  
+                  
+                  <span className="text-xs bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full px-2 py-1">React</span>
+                  <span className="text-xs bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full px-2 py-1">Mongo DB</span>
+                  <span className="text-xs bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full px-2 py-1">Tailwind css</span>
+                  
+                  <span className="text-xs bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full px-2 py-1">Express </span>
+                </div>
+                <p className="mt-4 text-gray-500 dark:text-gray-300 animate-fade-in">Developed a responsive web-based password manager application using React and Tailwind CSS, featuring an intuitive UI for adding and saving usernames and passwords.</p>
+                <div className="mt-4 flex justify-center space-x-4">
+                  <Button className="mx-1 gap-3" variant="outline">
+                    <a href="https://deployed-project1.com">View live app</a>
+                  </Button>
+                  <Button className="mx-1 gap-3" variant="outline">
+                    <a href="https://github.com/username/project1">View Code</a>
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
     </main>
   );
 }
+
+
+
+
