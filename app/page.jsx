@@ -1,30 +1,58 @@
+'use client'
 import Navbar from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { useEffect, useRef } from "react";
+import Typed from "typed.js";
 
 export default function Home() {
+
+  const el = useRef(null);
+
+  useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ['Fullstack Developer', 'Frontend Developer', 'Backend Developer', 'Software Engineer', 'Fullstack Developer'],
+      typeSpeed: 80,
+    });
+    el.current.className = 'text-purple-500 font-bold'; // Set the text color to purple and make it bold
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
+
   return (
     <main>
-      <section className="container px-4 py-10 mx-auto lg:h-128 lg:space-x-8 lg:flex lg:items-center">
-        <div className="w-full text-center lg:text-left lg:w-1/2 lg:-mt-8">
-          <h1 className="text-3xl leading-snug text-gray-800 dark:text-gray-200 md:text-4xl">
-            Prince Soni
-          </h1>
-          <p className="mt-4 text-lg text-gray-500 dark:text-gray-300">
-            a Full Stack Developer skilled in Next JS, React JS, typeScript. My expertise includes building responsive, high-quality web applications and managing databases. I have a strong foundation in deploying live projects, writing clean code, and following best practices. Currently, I’m seeking new opportunities to contribute to a dynamic team and deliver outstanding web solutions.
+     <section className="container px-4 py-12 mx-auto lg:h-128 lg:space-x-8 lg:flex lg:items-center md:px-16 md:py-20">
+  <div className="w-full mt-4 lg:mt-0 lg:w-1/2 lg:order-2">
+    <Image
+      src="/HeroImage1.jpg"
+      alt="John Doe"
+      width={350}
+      height={350}
+      className="w-full h-full max-w-xs mx-auto border-2 border-purple-500 rounded-full"
+    />
+  </div>
+  <div className="w-full text-center lg:text-left lg:w-1/2 lg:order-1 lg:-mt-8 mt-8 lg:mt-0">
+    <h1 className="font-bold text-3xl leading-snug text-gray-800 dark:text-gray-200 md:text-4xl">
+      Prince Soni
+    </h1>
+    <h1 className="text-3xl leading-snug text-gray-800 dark:text-gray-200 md:text-4xl">
+      I'm a <span ref={el} />
+    </h1>
+    <p className="mt-4 text-lg text-gray-500 dark:text-gray-300">
+      skilled in Next JS, React JS, typeScript. My expertise includes building responsive, high-quality web applications and managing databases. I have a strong foundation in deploying live projects, writing clean code, and following best practices. Currently, I’m seeking new opportunities to contribute to a dynamic team and deliver outstanding web solutions.
+    </p>
+    <div className="flex justify-center lg:justify-start">
+      <Button className="mt-6 px-16 py-7 rounded-2xl bg-gradient-to-r from-purple-400 to-purple-600 hover:from-purple-500 hover:to-purple-700 transition-all duration-300 ease-in-out transform hover:scale-105 flex items-center">
+        <a href="https://drive.google.com/file/d/16TiqhbGnCh3veV7H4HZuxFZ2V6Wo82AN/view?usp=sharing" className="font-semibold font-sans text-xl text-white">
+          Check Resume
+        </a>
+      </Button>
+    </div>
+  </div>
+</section>
 
-          </p>
-        </div>
-        <div className="w-full mt-4 lg:mt-0 lg:w-1/2">
-          <Image
-            src="/HeroImage1.jpg"
-            alt="John Doe"
-            width={500}
-            height={500}
-            className="w-full h-full max-w-md mx-auto border-2 border-purple-500 rounded-full"
-          />
-        </div>
-      </section>
 
       <section className="py-12 bg-gray-100 dark:bg-gray-900">
         <div className="container px-4 mx-auto">
@@ -140,10 +168,10 @@ export default function Home() {
           </div>
           <div className="flex flex-wrap justify-center">
             {/* <!-- Project 1 --> */}
-            <div className="w-full max-w-sm mx-4 my-4 bg-white rounded-lg shadow-lg dark:bg-gray-800 transform transition-transform duration-500 hover:scale-105">
+            <div className="w-full max-w-sm mx-4 my-4 bg-white rounded-lg shadow-2xl dark:bg-gray-800 transform transition-transform duration-500 hover:scale-105 hover:shadow-3xl">
               <div className="p-6">
-                <div className="flex items-center justify-center mb-4">
-                  <Image
+                <div className="flex items-center justify-center mb-4 rounded-lg">
+                  <Image className="rounded-lg"
                     src="/CloudifyM.png"
                     alt="John Doe"
                     width={500}
@@ -173,10 +201,10 @@ export default function Home() {
               </div>
             </div>
             {/* <!-- Project 2 --> */}
-            <div className="w-full max-w-sm mx-4 my-4 bg-white rounded-lg shadow-lg dark:bg-gray-800 transform transition-transform duration-500 hover:scale-105">
+            <div className="w-full max-w-sm mx-4 my-4 bg-white rounded-lg shadow-2xl dark:bg-gray-800 transform transition-transform duration-500 hover:scale-105 hover:shadow-3xl">
               <div className="p-6">
                 <div className="flex items-center justify-center mb-4">
-                  <Image
+                  <Image className="rounded-lg"
                     src="/MysteryM.png"
                     alt="John Doe"
                     width={500}
@@ -192,7 +220,6 @@ export default function Home() {
                   <span className="text-xs bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full px-2 py-1">MOngoDB</span>
                   <span className="text-xs bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full px-2 py-1">Shadcn</span>
                   <span className="text-xs bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full px-2 py-1">Next Auth</span>
-                  
                 </div>
                 <p className="mt-4 text-gray-500 dark:text-gray-300 animate-fade-in">Developed Mystery Mail, a full-stack anonymous messaging web application using TypeScript, NextJS, and React. The project features secure authentication via NextAuth, with MongoDB managing scalable data storage for user messages. I integrated Zod for robust schema validation, ensuring data integrity.</p>
                 <div className="mt-4 flex justify-center space-x-4">
@@ -206,10 +233,10 @@ export default function Home() {
               </div>
             </div>
             {/* <!-- Project 3 --> */}
-            <div className="w-full max-w-sm mx-4 my-4 bg-white rounded-lg shadow-lg dark:bg-gray-800 transform transition-transform duration-500 hover:scale-105">
+            <div className="w-full max-w-sm mx-4 my-4 bg-white rounded-lg shadow-2xl dark:bg-gray-800 transform transition-transform duration-500 hover:scale-105 hover:shadow-3xl">
               <div className="p-6">
                 <div className="flex items-center justify-center mb-4">
-                  <Image
+                  <Image className="rounded-lg"
                     src="/PostSpace2.png"
                     alt="John Doe"
                     width={500}
@@ -218,8 +245,6 @@ export default function Home() {
                 </div>
                 <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 animate-fade-in">Post Space</h3>
                 <div className="flex flex-wrap justify-center gap-2 mt-4">
-                  
-                  
                   <span className="text-xs bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full px-2 py-1">React</span>
                   <span className="text-xs bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full px-2 py-1">Redux</span>
                   <span className="text-xs bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full px-2 py-1">Appwrite</span>
@@ -238,10 +263,10 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="w-full max-w-sm mx-4 my-4 bg-white rounded-lg shadow-lg dark:bg-gray-800 transform transition-transform duration-500 hover:scale-105">
+            <div className="w-full max-w-sm mx-4 my-4 bg-white rounded-lg shadow-2xl dark:bg-gray-800 transform transition-transform duration-500 hover:scale-105 hover:shadow-3xl">
               <div className="p-6">
                 <div className="flex items-center justify-center mb-4">
-                  <Image
+                  <Image className="rounded-lg"
                     src="/UI.png"
                     alt="John Doe"
                     width={500}
@@ -250,30 +275,25 @@ export default function Home() {
                 </div>
                 <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 animate-fade-in">Music School UI</h3>
                 <div className="flex flex-wrap justify-center gap-2 mt-4">
-                  
                   <span className="text-xs bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full px-2 py-1">NextJS</span>
                   <span className="text-xs bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full px-2 py-1">React</span>
-                  
-                  
                   <span className="text-xs bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full px-2 py-1">Aceternity UI</span>
-                  
-                  
                 </div>
                 <p className="mt-4 text-gray-500 dark:text-gray-300 animate-fade-in">Developed the frontend UI using NextJS and React, creating responsive layouts with a modern, visually appealing interface. I utilized Aceternity UI and Shadcn to enhance the design.</p>
                 <div className="mt-4 flex justify-center space-x-4">
                   <Button className="mx-1 gap-3" variant="outline">
-                    <a href="https://deployed-project1.com">View live app</a>
+                    <a href="https://nextjsmusicproject.vercel.app/">View live app</a>
                   </Button>
                   <Button className="mx-1 gap-3" variant="outline">
-                    <a href="https://github.com/username/project1">View Code</a>
+                    <a href="https://github.com/PrinceSoni4090/nextjsmusicproject">View Code</a>
                   </Button>
                 </div>
               </div>
             </div>
-            <div className="w-full max-w-sm mx-4 my-4 bg-white rounded-lg shadow-lg dark:bg-gray-800 transform transition-transform duration-500 hover:scale-105">
+            <div className="w-full max-w-sm mx-4 my-4 bg-white rounded-lg shadow-2xl dark:bg-gray-800 transform transition-transform duration-500 hover:scale-105 hover:shadow-3xl">
               <div className="p-6">
                 <div className="flex items-center justify-center mb-4">
-                  <Image
+                  <Image className="rounded-xl"
                     src="/PassM2.png"
                     alt="John Doe"
                     width={500}
@@ -282,21 +302,18 @@ export default function Home() {
                 </div>
                 <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 animate-fade-in">Pass Manager</h3>
                 <div className="flex flex-wrap justify-center gap-2 mt-4">
-                  
-                  
                   <span className="text-xs bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full px-2 py-1">React</span>
                   <span className="text-xs bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full px-2 py-1">Mongo DB</span>
                   <span className="text-xs bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full px-2 py-1">Tailwind css</span>
-                  
                   <span className="text-xs bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full px-2 py-1">Express </span>
                 </div>
                 <p className="mt-4 text-gray-500 dark:text-gray-300 animate-fade-in">Developed a responsive web-based password manager application using React and Tailwind CSS, featuring an intuitive UI for adding and saving usernames and passwords.</p>
                 <div className="mt-4 flex justify-center space-x-4">
                   <Button className="mx-1 gap-3" variant="outline">
-                    <a href="https://deployed-project1.com">View live app</a>
+                    <a href="https://passop-eosin.vercel.app/">View live app</a>
                   </Button>
                   <Button className="mx-1 gap-3" variant="outline">
-                    <a href="https://github.com/username/project1">View Code</a>
+                    <a href="https://github.com/PrinceSoni4090/Pass-Manager">View Code</a>
                   </Button>
                 </div>
               </div>
