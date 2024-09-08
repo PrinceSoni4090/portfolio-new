@@ -1,5 +1,6 @@
 'use client'
 import Navbar from "@/components/Navbar";
+import Skills from "@/components/Skills";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
@@ -23,96 +24,155 @@ export default function Home() {
 
   return (
     <main>
-     <section className="container px-4 py-12 mx-auto lg:h-128 lg:space-x-8 lg:flex lg:items-center md:px-16 md:py-20">
-  <div className="w-full mt-4 lg:mt-0 lg:w-1/2 lg:order-2">
-    <Image
-      src="/HeroImage1.jpg"
-      alt="John Doe"
-      width={350}
-      height={350}
-      className="w-full h-full max-w-xs mx-auto border-2 border-purple-500 rounded-full"
-    />
-  </div>
-  <div className="w-full text-center lg:text-left lg:w-1/2 lg:order-1 lg:-mt-8 mt-8 lg:mt-0">
-    <h1 className="font-bold text-3xl leading-snug text-gray-800 dark:text-gray-200 md:text-4xl">
-      Prince Soni
-    </h1>
-    <h1 className="text-3xl leading-snug text-gray-800 dark:text-gray-200 md:text-4xl">
-      I'm a <span ref={el} />
-    </h1>
-    <p className="mt-4 text-lg text-gray-500 dark:text-gray-300">
-      skilled in Next JS, React JS, typeScript. My expertise includes building responsive, high-quality web applications and managing databases. I have a strong foundation in deploying live projects, writing clean code, and following best practices. Currently, I’m seeking new opportunities to contribute to a dynamic team and deliver outstanding web solutions.
-    </p>
-    <div className="flex justify-center lg:justify-start">
-      <Button className="mt-6 px-16 py-7 rounded-2xl bg-gradient-to-r from-purple-400 to-purple-600 hover:from-purple-500 hover:to-purple-700 transition-all duration-300 ease-in-out transform hover:scale-105 flex items-center">
-        <a href="https://drive.google.com/file/d/16TiqhbGnCh3veV7H4HZuxFZ2V6Wo82AN/view?usp=sharing" className="font-semibold font-sans text-xl text-white">
-          Check Resume
-        </a>
-      </Button>
-    </div>
-  </div>
-</section>
-
-
-      <section className="py-12 bg-gray-100 dark:bg-gray-900">
-        <div className="container px-4 mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-800 dark:text-gray-200">Pricing Plans</h2>
-            <p className="mt-4 text-lg text-gray-500 dark:text-gray-300">Choose the plan that suits you best</p>
-          </div>
-          <div className="flex flex-wrap justify-center">
-            {/* Basic Plan */}
-            <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
-              <div className="p-6 bg-white rounded-lg shadow-lg dark:bg-gray-800 transform transition duration-500 hover:scale-105 text-center">
-                <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">Basic</h3>
-                <p className="mt-4 text-gray-500 dark:text-gray-300">$10/month</p>
-                <ul className="mt-6 mb-6 space-y-4">
-                  <li className="text-gray-600 dark:text-gray-400"><s>10GB Storage</s></li>
-                  <li className="text-gray-600 dark:text-gray-400"><s>Basic Support</s></li>
-                  <li className="text-gray-600 dark:text-gray-400"><s>Single User</s></li>
-                  <li className="text-gray-600 dark:text-gray-400">Community Access</li>
-                  <li className="text-gray-600 dark:text-gray-400">Weekly Updates</li>
-                </ul>
-                <Button className="mx-1" variant="outline">Choose Plan</Button>
-              </div>
-            </div>
-            {/* Standard Plan */}
-            <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
-              <div className="p-6 bg-white rounded-lg shadow-lg dark:bg-gray-800 transform transition duration-500 hover:scale-105 text-center border-2 border-purple-500">
-                <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">Standard</h3>
-                <p className="mt-4 text-gray-500 dark:text-gray-300">$20/month</p>
-                <span className="inline-block px-3 py-1 text-sm font-semibold text-white bg-purple-500 rounded-full">Bestseller</span>
-                <ul className="mt-6 mb-6 space-y-4">
-                  <li className="text-gray-600 dark:text-gray-400">50GB Storage</li>
-                  <li className="text-gray-600 dark:text-gray-400">Priority Support</li>
-                  <li className="text-gray-600 dark:text-gray-400">Up to 5 Users</li>
-                  <li className="text-gray-600 dark:text-gray-400">Community Access</li>
-                  <li className="text-gray-600 dark:text-gray-400">Daily Updates</li>
-                </ul>
-                <Button className="mx-1" variant="outline">Choose Plan</Button>
-              </div>
-            </div>
-            {/* Premium Plan */}
-            <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
-              <div className="p-6 bg-white rounded-lg shadow-lg dark:bg-gray-800 transform transition duration-500 hover:scale-105 text-center">
-                <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">Premium</h3>
-                <p className="mt-4 text-gray-500 dark:text-gray-300">$30/month</p>
-                <ul className="mt-6 mb-6 space-y-4">
-                  <li className="text-gray-600 dark:text-gray-400">200GB Storage</li>
-                  <li className="text-gray-600 dark:text-gray-400">24/7 Support</li>
-                  <li className="text-gray-600 dark:text-gray-400">Unlimited Users</li>
-                  <li className="text-gray-600 dark:text-gray-400">Community Access</li>
-                  <li className="text-gray-600 dark:text-gray-400">Real-time Updates</li>
-                </ul>
-                <Button className="mx-1" variant="outline">Choose Plan</Button>
-              </div>
-            </div>
+      {/*  About */}
+      <section className="container px-4 py-12 mx-auto lg:h-128 lg:space-x-8 lg:flex lg:items-center md:px-16 md:py-20">
+        <div className="w-full mt-4 lg:mt-0 lg:w-1/2 lg:order-2">
+          <Image
+            src="/HeroImage1.jpg"
+            alt="John Doe"
+            width={350}
+            height={350}
+            className="w-full h-full max-w-xs mx-auto border-2 border-purple-500 rounded-full"
+          />
+        </div>
+        <div className="w-full text-center lg:text-left lg:w-1/2 lg:order-1 lg:-mt-8 mt-8 lg:mt-0">
+          <h1 className="font-bold text-3xl leading-snug text-gray-800 dark:text-gray-200 md:text-4xl">
+            Prince Soni
+          </h1>
+          <h1 className="text-3xl leading-snug text-gray-800 dark:text-gray-200 md:text-4xl">
+            I'm a <span ref={el} />
+          </h1>
+          <p className="mt-4 text-lg text-gray-500 dark:text-gray-300">
+            skilled in Next JS, React JS, typeScript. My expertise includes building responsive, high-quality web applications and managing databases. I have a strong foundation in deploying live projects, writing clean code, and following best practices. Currently, I’m seeking new opportunities to contribute to a dynamic team and deliver outstanding web solutions.
+          </p>
+          <div className="flex justify-center lg:justify-start">
+            <Button className="mt-6 px-16 py-7 rounded-2xl bg-gradient-to-r from-purple-400 to-purple-600 hover:from-purple-500 hover:to-purple-700 transition-all duration-300 ease-in-out transform hover:scale-105 flex items-center">
+              <a href="https://drive.google.com/file/d/16TiqhbGnCh3veV7H4HZuxFZ2V6Wo82AN/view?usp=sharing" className="font-semibold font-sans text-xl text-white">
+                Check Resume
+              </a>
+            </Button>
           </div>
         </div>
       </section>
 
+      {/* SKILLS  */}
+      {/* <section className="py-12  ">
+        <div className="container px-4 mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-800 dark:text-gray-200">My Skills</h2>
+            <p className="mt-4 text-lg text-gray-500 dark:text-gray-300">A showcase of my technical skills</p>
+          </div>
+          <div className="flex flex-wrap justify-center">
+            <div className="w-full md:w-1/2 p-4">
+              <div className="p-6 bg-white rounded-lg shadow-lg dark:bg-gray-800 text-center">
+                <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">Frontend</h3>
+                <div className="mt-4 flex flex-wrap justify-center space-x-4">
+                  <div className="p-2 bg-gray-200 rounded-md dark:bg-gray-700">
+                    <img src="/TypeS.webp" alt="TypeScript" className="inline-block w-6 h-6 mr-2" />
+                    TypeScript
+                  </div>
+                  <div className="p-2 bg-gray-200 rounded-md dark:bg-gray-700">
+                    <img src="/JavaScript.png" alt="JavaScript" className="inline-block w-6 h-6 mr-2" />
+                    JavaScript
+                  </div>
+                  <div className="p-2 bg-gray-200 rounded-md dark:bg-gray-700">
+                    <img src="/html.png" alt="HTML/CSS" className="inline-block w-6 h-6 mr-2" />
+                    HTML/CSS
+                  </div>
+                  <div className="p-2 bg-gray-200 rounded-md dark:bg-gray-700">
+                    <img src="/next.jpg" alt="NextJS" className="inline-block w-6 h-6 mr-2" />
+                    NextJS
+                  </div>
+                  <div className="p-2 bg-gray-200 rounded-md dark:bg-gray-700">
+                    <img src="/react.png" alt="React" className="inline-block w-6 h-6 mr-2" />
+                    React
+                  </div>
+                  <div className="p-2 bg-gray-200 rounded-md dark:bg-gray-700">
+                    <img src="/tailwind.png" alt="Tailwind CSS" className="inline-block w-6 h-6 mr-2" />
+                    Tailwind CSS
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="w-full md:w-1/2 p-4">
+              <div className="p-6 bg-white rounded-lg shadow-lg dark:bg-gray-800 text-center">
+                <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">Backend</h3>
+                <div className="mt-4 flex flex-wrap justify-center space-x-4">
+                  <div className="p-2 bg-gray-200 rounded-md dark:bg-gray-700">
+                    <img src="/node.jpg" alt="NodeJS" className="inline-block w-6 h-6 mr-2" />
+                    NodeJS
+                  </div>
+                  <div className="p-2 bg-gray-200 rounded-md dark:bg-gray-700">
+                    <img src="/ex.webp" alt="ExpressJS" className="inline-block w-6 h-6 mr-2" />
+                    ExpressJS
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="w-full md:w-1/2 p-4">
+              <div className="p-6 bg-white rounded-lg shadow-lg dark:bg-gray-800 text-center">
+                <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">Databases</h3>
+                <div className="mt-4 flex flex-wrap justify-center space-x-4">
+                  <div className="p-2 bg-gray-200 rounded-md dark:bg-gray-700">
+                    <img src="/mongo.png" alt="MongoDB" className="inline-block w-6 h-6 mr-2" />
+                    MongoDB
+                  </div>
+                  <div className="p-2 bg-gray-200 rounded-md dark:bg-gray-700">
+                    <img src="/neon.jpg" alt="NeonDB" className="inline-block w-6 h-6 mr-2" />
+                    NeonDB
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="w-full md:w-1/2 p-4">
+              <div className="p-6 bg-white rounded-lg shadow-lg dark:bg-gray-800 text-center">
+                <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">Services and Tools</h3>
+                <div className="mt-4 flex flex-wrap justify-center space-x-4">
+                  <div className="p-2 bg-gray-200 rounded-md dark:bg-gray-700">
+                    <img src="/app.png" alt="Appwrite" className="inline-block w-6 h-6 mr-2" />
+                    Appwrite
+                  </div>
+                  <div className="p-2 bg-gray-200 rounded-md dark:bg-gray-700">
+                    <img src="/auth.png" alt="NextAuth" className="inline-block w-6 h-6 mr-2" />
+                    NextAuth
+                  </div>
+                  <div className="p-2 bg-gray-200 rounded-md dark:bg-gray-700">
+                    <img src="/clerk.png" alt="Clerk" className="inline-block w-6 h-6 mr-2" />
+                    Clerk
+                  </div>
+                  <div className="p-2 bg-gray-200 rounded-md dark:bg-gray-700">
+                    <img src="/prisma.png" alt="Prisma" className="inline-block w-6 h-6 mr-2" />
+                    Prisma
+                  </div>
+                  <div className="p-2 bg-gray-200 rounded-md dark:bg-gray-700">
+                    <img src="/zod.png" alt="Zod" className="inline-block w-6 h-6 mr-2" />
+                    Zod
+                  </div>
+                  <div className="p-2 bg-gray-200 rounded-md dark:bg-gray-700">
+                    <img src="/shadcn.png" alt="Shadcn" className="inline-block w-6 h-6 mr-2" />
+                    Shadcn
+                  </div>
+                  <div className="p-2 bg-gray-200 rounded-md dark:bg-gray-700">
+                    <img src="/Redux.png" alt="Redux" className="inline-block w-6 h-6 mr-2" />
+                    Redux
+                  </div>
+                  <div className="p-2 bg-gray-200 rounded-md dark:bg-gray-700">
+                    <img src="/ace.png" alt="Aceternity UI" className="inline-block w-6 h-6 mr-2" />
+                    Aceternity UI
+                  </div>
+                  <div className="p-2 bg-gray-200 rounded-md dark:bg-gray-700">
+                    <img src="/daisy.png" alt="Daisy UI" className="inline-block w-6 h-6 mr-2" />
+                    Daisy UI
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> */}
+      <Skills/>
 
-      <section className="py-12 bg-white dark:bg-gray-800">
+      <section className="py-12 ">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-semibold text-gray-800 dark:text-gray-200 animate-fade-in">Our Features</h2>
@@ -159,8 +219,8 @@ export default function Home() {
         </div>
       </section>
 
-
-      <section className="py-12 bg-gray-50 dark:bg-gray-900">
+        
+      <section className="py-12 ">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-semibold text-gray-800 dark:text-gray-200 animate-fade-in">Top Projects</h2>
@@ -320,6 +380,13 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+      </section>
+
+      
+
+      <section>
+
       </section>
 
 

@@ -1,5 +1,5 @@
-import React from 'react'
 
+'use client'
 import Link from 'next/link';
 import { Button } from './ui/button';
 import {
@@ -11,11 +11,46 @@ import {
     SheetTrigger,
 } from "@/components/ui/sheet"
 import { ModeToggle } from './theme-btn';
+import LoadingBar from 'react-top-loading-bar';
+import { usePathname } from 'next/navigation';
+import { useState, useEffect } from 'react';
+
 
 
 const Navbar = () => {
+
+    const [progress, setProgress] = useState(0)
+    const pathname = usePathname()
+
+    useEffect(() => {
+        setProgress(30)
+
+        setTimeout(() => {
+            setProgress(70)
+        }, 100);
+
+        setTimeout(() => {
+            setProgress(100)
+        }, 800);
+
+    }, [pathname])
+
+    useEffect(() => {
+        setTimeout(() => {
+            setProgress(0)
+        }, );
+
+       
+    }, [900])
+
+
     return (
         <nav className="p-4 bg-background/50 sticky top-0  backdrop-blur border-b-0 z-10">
+            <LoadingBar
+                color='#933ce6'
+                progress={progress}
+                onLoaderFinished={() => setProgress(0)}
+            />
             <div className="container mx-auto flex justify-between items-center">
                 <Link href={"/"}>
                     <div className=" text-lg font-semibold">
@@ -36,7 +71,7 @@ const Navbar = () => {
 
                 <div className="md:hidden">
                     <Sheet>
-                    <spam className="mx-4">
+                        <spam className="mx-4">
                             <ModeToggle />
                         </spam>
                         <SheetTrigger>
@@ -45,7 +80,7 @@ const Navbar = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                             </svg>
                         </SheetTrigger>
-                        
+
 
 
                         <SheetContent>
@@ -83,6 +118,7 @@ const Navbar = () => {
         </nav>
     );
 };
+
 
 export default Navbar;
 
