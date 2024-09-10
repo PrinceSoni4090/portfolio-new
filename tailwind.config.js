@@ -1,6 +1,15 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 const colors = require("tailwindcss/colors");
 const { default: flattenColorPalette } = require("tailwindcss/lib/util/flattenColorPalette");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
+module.exports = {
+  // other configurations...
+  plugins: [
+    new MiniCssExtractPlugin(),
+    // other plugins...
+  ],
+};
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -64,7 +73,8 @@ module.exports = {
     plugins: [
         require("tailwindcss-animate"),
         require('daisyui'),
-        addVariablesForColors
+        addVariablesForColors,
+		new MiniCssExtractPlugin(),
     ],
 };
 

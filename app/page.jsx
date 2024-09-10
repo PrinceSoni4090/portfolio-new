@@ -6,7 +6,7 @@ import Image from "next/image";
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import { Link as ScrollLink } from "react-scroll";
-import { BackgroundGradient } from "@/components/ui/background-gradient";
+import { Cover } from "@/components/ui/cover";
 
 export default function Home() {
 
@@ -40,8 +40,8 @@ export default function Home() {
         </div>
 
         <div className="w-full text-center lg:text-left lg:w-1/2 lg:order-1 lg:-mt-8 mt-8 lg:mt-0">
-          <h1 className="font-bold text-3xl leading-snug text-gray-800 dark:text-gray-200 md:text-4xl">
-            Prince Soni
+          <h1 className=" text-4xl md:text-4xl lg:text-6xl font-semibold relative z-20bg-clip-text text-transparent bg-gradient-to-b font-bold text-3xl leading-snug  md:text-4xl">
+           <Cover>Prince Soni </Cover> 
           </h1>
           <h1 className="text-3xl leading-snug text-gray-800 dark:text-gray-200 md:text-4xl">
             I'm a <span ref={el} />
@@ -73,7 +73,10 @@ export default function Home() {
             <p className="mt-4 text-lg text-gray-500 dark:text-gray-300 animate-fade-in">A showcase of my best work</p>
           </div>
           <div className="flex flex-wrap justify-center">
+
+
             {/* <!-- Project 1 --> */}
+            
             <div className="w-full max-w-sm mx-4 my-4 rounded-xl shadow-lg dark:bg-gray-900 transform transition-transform duration-500 hover:scale-105 hover:shadow-xl">
               <div className="p-6">
                 <div className="flex items-center justify-center mb-4 rounded-xl">
@@ -223,7 +226,7 @@ export default function Home() {
                   </Button>
                 </div>
               </div>
-            </div>
+            </div>    
           </div>
         </div>
 
