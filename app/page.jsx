@@ -1,10 +1,12 @@
 'use client'
-import Navbar from "@/components/Navbar";
+import Education from "@/components/Education";
 import Skills from "@/components/Skills";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
+import { Link as ScrollLink } from "react-scroll";
+import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 
 export default function Home() {
 
@@ -24,8 +26,9 @@ export default function Home() {
 
   return (
     <main>
+
       {/*  About */}
-      <section className="container px-4 py-12 mx-auto lg:h-128 lg:space-x-8 lg:flex lg:items-center md:px-16 md:py-20">
+      <section id="about" className="container px-4 py-12 mx-auto lg:h-128 lg:space-x-8 lg:flex lg:items-center md:px-16 md:py-20">
         <div className="w-full mt-4 lg:mt-0 lg:w-1/2 lg:order-2">
           <Image
             src="/HeroImage1.jpg"
@@ -56,171 +59,12 @@ export default function Home() {
       </section>
 
       {/* SKILLS  */}
-      {/* <section className="py-12  ">
-        <div className="container px-4 mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-800 dark:text-gray-200">My Skills</h2>
-            <p className="mt-4 text-lg text-gray-500 dark:text-gray-300">A showcase of my technical skills</p>
-          </div>
-          <div className="flex flex-wrap justify-center">
-            <div className="w-full md:w-1/2 p-4">
-              <div className="p-6 bg-white rounded-lg shadow-lg dark:bg-gray-800 text-center">
-                <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">Frontend</h3>
-                <div className="mt-4 flex flex-wrap justify-center space-x-4">
-                  <div className="p-2 bg-gray-200 rounded-md dark:bg-gray-700">
-                    <img src="/TypeS.webp" alt="TypeScript" className="inline-block w-6 h-6 mr-2" />
-                    TypeScript
-                  </div>
-                  <div className="p-2 bg-gray-200 rounded-md dark:bg-gray-700">
-                    <img src="/JavaScript.png" alt="JavaScript" className="inline-block w-6 h-6 mr-2" />
-                    JavaScript
-                  </div>
-                  <div className="p-2 bg-gray-200 rounded-md dark:bg-gray-700">
-                    <img src="/html.png" alt="HTML/CSS" className="inline-block w-6 h-6 mr-2" />
-                    HTML/CSS
-                  </div>
-                  <div className="p-2 bg-gray-200 rounded-md dark:bg-gray-700">
-                    <img src="/next.jpg" alt="NextJS" className="inline-block w-6 h-6 mr-2" />
-                    NextJS
-                  </div>
-                  <div className="p-2 bg-gray-200 rounded-md dark:bg-gray-700">
-                    <img src="/react.png" alt="React" className="inline-block w-6 h-6 mr-2" />
-                    React
-                  </div>
-                  <div className="p-2 bg-gray-200 rounded-md dark:bg-gray-700">
-                    <img src="/tailwind.png" alt="Tailwind CSS" className="inline-block w-6 h-6 mr-2" />
-                    Tailwind CSS
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="w-full md:w-1/2 p-4">
-              <div className="p-6 bg-white rounded-lg shadow-lg dark:bg-gray-800 text-center">
-                <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">Backend</h3>
-                <div className="mt-4 flex flex-wrap justify-center space-x-4">
-                  <div className="p-2 bg-gray-200 rounded-md dark:bg-gray-700">
-                    <img src="/node.jpg" alt="NodeJS" className="inline-block w-6 h-6 mr-2" />
-                    NodeJS
-                  </div>
-                  <div className="p-2 bg-gray-200 rounded-md dark:bg-gray-700">
-                    <img src="/ex.webp" alt="ExpressJS" className="inline-block w-6 h-6 mr-2" />
-                    ExpressJS
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="w-full md:w-1/2 p-4">
-              <div className="p-6 bg-white rounded-lg shadow-lg dark:bg-gray-800 text-center">
-                <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">Databases</h3>
-                <div className="mt-4 flex flex-wrap justify-center space-x-4">
-                  <div className="p-2 bg-gray-200 rounded-md dark:bg-gray-700">
-                    <img src="/mongo.png" alt="MongoDB" className="inline-block w-6 h-6 mr-2" />
-                    MongoDB
-                  </div>
-                  <div className="p-2 bg-gray-200 rounded-md dark:bg-gray-700">
-                    <img src="/neon.jpg" alt="NeonDB" className="inline-block w-6 h-6 mr-2" />
-                    NeonDB
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="w-full md:w-1/2 p-4">
-              <div className="p-6 bg-white rounded-lg shadow-lg dark:bg-gray-800 text-center">
-                <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">Services and Tools</h3>
-                <div className="mt-4 flex flex-wrap justify-center space-x-4">
-                  <div className="p-2 bg-gray-200 rounded-md dark:bg-gray-700">
-                    <img src="/app.png" alt="Appwrite" className="inline-block w-6 h-6 mr-2" />
-                    Appwrite
-                  </div>
-                  <div className="p-2 bg-gray-200 rounded-md dark:bg-gray-700">
-                    <img src="/auth.png" alt="NextAuth" className="inline-block w-6 h-6 mr-2" />
-                    NextAuth
-                  </div>
-                  <div className="p-2 bg-gray-200 rounded-md dark:bg-gray-700">
-                    <img src="/clerk.png" alt="Clerk" className="inline-block w-6 h-6 mr-2" />
-                    Clerk
-                  </div>
-                  <div className="p-2 bg-gray-200 rounded-md dark:bg-gray-700">
-                    <img src="/prisma.png" alt="Prisma" className="inline-block w-6 h-6 mr-2" />
-                    Prisma
-                  </div>
-                  <div className="p-2 bg-gray-200 rounded-md dark:bg-gray-700">
-                    <img src="/zod.png" alt="Zod" className="inline-block w-6 h-6 mr-2" />
-                    Zod
-                  </div>
-                  <div className="p-2 bg-gray-200 rounded-md dark:bg-gray-700">
-                    <img src="/shadcn.png" alt="Shadcn" className="inline-block w-6 h-6 mr-2" />
-                    Shadcn
-                  </div>
-                  <div className="p-2 bg-gray-200 rounded-md dark:bg-gray-700">
-                    <img src="/Redux.png" alt="Redux" className="inline-block w-6 h-6 mr-2" />
-                    Redux
-                  </div>
-                  <div className="p-2 bg-gray-200 rounded-md dark:bg-gray-700">
-                    <img src="/ace.png" alt="Aceternity UI" className="inline-block w-6 h-6 mr-2" />
-                    Aceternity UI
-                  </div>
-                  <div className="p-2 bg-gray-200 rounded-md dark:bg-gray-700">
-                    <img src="/daisy.png" alt="Daisy UI" className="inline-block w-6 h-6 mr-2" />
-                    Daisy UI
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-      <Skills/>
-
-      <section className="py-12 ">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-semibold text-gray-800 dark:text-gray-200 animate-fade-in">Our Features</h2>
-            <p className="mt-4 text-lg text-gray-500 dark:text-gray-300 animate-fade-in">Discover what makes us unique</p>
-          </div>
-          <div className="flex flex-wrap justify-center">
-            {/* <!-- Feature 1 --> */}
-            <div className="w-full max-w-sm mx-4 my-4 bg-gray-100 rounded-lg shadow-lg dark:bg-gray-700 transform transition-transform duration-500 hover:scale-105">
-              <div className="p-6">
-                <div className="flex items-center justify-center mb-4">
-                  <svg className="w-12 h-12 text-primary animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3"></path>
-                  </svg>
-                </div>
-                <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 animate-fade-in">Feature One</h3>
-                <p className="mt-4 text-gray-500 dark:text-gray-300 animate-fade-in">Description of feature one.</p>
-              </div>
-            </div>
-            {/* <!-- Feature 2 --> */}
-            <div className="w-full max-w-sm mx-4 my-4 bg-gray-100 rounded-lg shadow-lg dark:bg-gray-700 transform transition-transform duration-500 hover:scale-105">
-              <div className="p-6">
-                <div className="flex items-center justify-center mb-4">
-                  <svg className="w-12 h-12 text-primary animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3"></path>
-                  </svg>
-                </div>
-                <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 animate-fade-in">Feature Two</h3>
-                <p className="mt-4 text-gray-500 dark:text-gray-300 animate-fade-in">Description of feature two.</p>
-              </div>
-            </div>
-            {/* <!-- Feature 3 --> */}
-            <div className="w-full max-w-sm mx-4 my-4 bg-gray-100 rounded-lg shadow-lg dark:bg-gray-700 transform transition-transform duration-500 hover:scale-105">
-              <div className="p-6">
-                <div className="flex items-center justify-center mb-4">
-                  <svg className="w-12 h-12 text-primary animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3"></path>
-                  </svg>
-                </div>
-                <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 animate-fade-in">Feature Three</h3>
-                <p className="mt-4 text-gray-500 dark:text-gray-300 animate-fade-in">Description of feature three.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+      <section id="skills">
+        <Skills />
       </section>
 
-        
-      <section className="py-12 ">
+      {/* Projects  */}
+      <section id="projects" className="py-12 ">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-semibold text-gray-800 dark:text-gray-200 animate-fade-in">Top Projects</h2>
@@ -383,12 +227,101 @@ export default function Home() {
 
       </section>
 
-      
-
-      <section>
-
+      {/* Education  */}
+      <section id="education">
+        <Education />
       </section>
 
+
+      {/* Footer  */}
+     <section>
+  <footer className="footer footer-center rounded p-10">
+    <nav className="grid grid-flow-col gap-4">
+      <footer>
+        <nav className=" font-semibold  flex justify-center space-x-4">
+          <ScrollLink
+            to="about"
+            smooth={true}
+            duration={50}
+            className="hover:underline cursor-pointer"
+          >
+            About
+          </ScrollLink>
+          <ScrollLink
+            to="skills"
+            smooth={true}
+            duration={50}
+            className="hover:underline cursor-pointer"
+          >
+            Skills
+          </ScrollLink>
+          <ScrollLink
+            to="projects"
+            smooth={true}
+            duration={50}
+            className="hover:underline cursor-pointer"
+          >
+            Projects
+          </ScrollLink>
+          <ScrollLink
+            to="education"
+            smooth={true}
+            duration={50}
+            className="hover:underline cursor-pointer"
+          >
+            Education
+          </ScrollLink>
+        </nav>
+      </footer>
+    </nav>
+    <nav>
+      <div className="grid grid-flow-col gap-4">
+        <a href="https://x.com/soniPrince4090" target="_blank" rel="noopener noreferrer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            className="fill-current text-black dark:text-white"
+          >
+            <path
+              d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+            ></path>
+          </svg>
+        </a>
+        <a href="https://github.com/PrinceSoni4090" target="_blank" rel="noopener noreferrer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            className="fill-current text-black dark:text-white"
+          >
+            <path
+              d="M12 .297c-6.63 0-12 5.373-12 12 0 5.302 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.083-.729.083-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.775.418-1.305.76-1.605-2.665-.305-5.466-1.335-5.466-5.93 0-1.31.467-2.38 1.235-3.22-.123-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.3 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.29-1.552 3.297-1.23 3.297-1.23.653 1.653.241 2.873.118 3.176.77.84 1.233 1.91 1.233 3.22 0 4.61-2.803 5.62-5.475 5.92.43.37.823 1.102.823 2.222 0 1.606-.015 2.898-.015 3.293 0 .322.218.694.825.576 4.765-1.588 8.2-6.085 8.2-11.386 0-6.627-5.373-12-12-12z"
+            ></path>
+          </svg>
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            className="fill-current text-black dark:text-white"
+          >
+            <path
+              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.026-3.063-1.867-3.063-1.869 0-2.156 1.459-2.156 2.963v5.704h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.841-1.563 3.039 0 3.6 2.002 3.6 4.604v5.592z"
+            ></path>
+          </svg>
+        </a>
+      </div>
+    </nav>
+    <aside>
+      <p>Copyright © {new Date().getFullYear()} - All rights reserved.</p>
+    </aside>
+  </footer>
+</section>
 
     </main>
   );

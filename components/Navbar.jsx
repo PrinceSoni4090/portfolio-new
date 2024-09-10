@@ -53,8 +53,8 @@ const Navbar = () => {
             />
             <div className="container mx-auto flex justify-between items-center">
                 <Link href={"/"}>
-                    <div className=" text-lg font-semibold">
-                        PrinceBlog
+                    <div className=" text-lg font-semibold md:mr-2 lg:mr-2 ">
+                        Portfolio
                     </div>
                 </Link>
                 <div className='hidden md:flex space-x-4 items-center'>
