@@ -93,10 +93,12 @@ const Navbar = () => {
                         <ModeToggle />
                     </div>
                 </div>
-                <div className="md:hidden">
-                    <Sheet>
+                 <div className="md:hidden">
+                            <ModeToggle /> </div>
+                {/* <div className="md:hidden">
+                            <ModeToggle /> 
+                   { <Sheet>
                         <span className="mx-4">
-                            <ModeToggle />
                         </span>
                         <SheetTrigger>
                             <svg className="w-6 h-6 transition-transform duration-300 hover:text-purple-500 hover:scale-110 hover:shadow-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -145,7 +147,7 @@ const Navbar = () => {
                             </SheetHeader>
                         </SheetContent>
                     </Sheet>
-                </div>
+                </div> */}
             </div>
         </nav>
     );
