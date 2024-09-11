@@ -7,28 +7,31 @@ import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import { Link as ScrollLink } from "react-scroll";
 import { Cover } from "@/components/ui/cover";
+import { FlipWords } from "@/components/ui/flip-words";
+
 
 export default function Home() {
 
   const el = useRef(null);
 
-  useEffect(() => {
-    const typed = new Typed(el.current, {
-      strings: ['Fullstack Developer', 'Frontend Developer', 'Backend Developer', 'Software Engineer', 'Fullstack Developer'],
-      typeSpeed: 80,
-    });
-    el.current.className = 'text-purple-500 font-bold'; // Set the text color to purple and make it bold
-    return () => {
-      typed.destroy();
-    };
-  }, []);
+  // useEffect(() => {
+  //   const typed = new Typed(el.current, {
+  //     strings: ['Fullstack Developer', 'Frontend Developer', 'Backend Developer', 'Software Engineer', 'Fullstack Developer'],
+  //     typeSpeed: 80,
+  //   });
+  //   el.current.className = 'text-purple-500 font-bold'; // Set the text color to purple and make it bold
+  //   return () => {
+  //     typed.destroy();
+  //   };
+  // }, []);
 
-
+const words = ['Fullstack Developer', 'Frontend Developer', 'Backend Developer', 'Software Engineer', 'Fullstack Developer']
   return (
     <main>
 
       {/*  About */}
       <section id="about" className="container px-4 py-12 mx-auto lg:h-128 lg:space-x-8 lg:flex lg:items-center md:px-16 md:py-20">
+      
         <div className="w-full mt-4 lg:mt-0 lg:w-1/2 lg:order-2">
           <Image
             src="/HeroImage1.jpg"
@@ -44,7 +47,8 @@ export default function Home() {
            <Cover>Prince Soni </Cover> 
           </h1>
           <h1 className="text-3xl leading-snug text-gray-800 dark:text-gray-200 md:text-4xl">
-            I'm a <span ref={el} />
+            {/* I'm a <span ref={el} /> */}
+           <span>I'm a</span> <FlipWords words= {words} />
           </h1>
           <p className="mt-4 text-lg text-gray-500 dark:text-gray-300">
             skilled in Next JS, React JS, typeScript. My expertise includes building responsive, high-quality web applications and managing databases. I have a strong foundation in deploying live projects, writing clean code, and following best practices. Currently, I’m seeking new opportunities to contribute to a dynamic team and deliver outstanding web solutions.
@@ -58,10 +62,11 @@ export default function Home() {
           </div>
         </div>
 
+      
       </section>
 
       {/* SKILLS  */}
-      <section id="skills">
+      <section id="skills">  
         <Skills />
       </section>
 
