@@ -8,6 +8,14 @@ import Typed from "typed.js";
 import { Link as ScrollLink } from "react-scroll";
 import { Cover } from "@/components/ui/cover";
 import { FlipWords } from "@/components/ui/flip-words";
+import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
+import {
+
+
+
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
 
 
 export default function Home() {
@@ -26,6 +34,8 @@ export default function Home() {
   // }, []);
 
 const words = ['Fullstack Developer', 'Frontend Developer', 'Backend Developer', 'Software Engineer', 'Fullstack Developer']
+
+const para = `skilled in Next JS, React JS, typeScript. My expertise includes building responsive, high-quality web applications and managing databases. I have a strong foundation in deploying live projects, writing clean code, and following best practices. Currently, I’m seeking new opportunities to contribute to a dynamic team and deliver outstanding web solutions.`;
   return (
     <main>
 
@@ -50,9 +60,9 @@ const words = ['Fullstack Developer', 'Frontend Developer', 'Backend Developer',
             {/* I'm a <span ref={el} /> */}
            <span>I'm a</span> <FlipWords words= {words} />
           </h1>
-          <p className="mt-4 text-lg text-gray-500 dark:text-gray-300">
-            skilled in Next JS, React JS, typeScript. My expertise includes building responsive, high-quality web applications and managing databases. I have a strong foundation in deploying live projects, writing clean code, and following best practices. Currently, I’m seeking new opportunities to contribute to a dynamic team and deliver outstanding web solutions.
-          </p>
+          <div className="mt-4 text-lg text-gray-500 dark:text-gray-300">
+          <TextGenerateEffect words={para} />
+          </div>
           <div className="flex justify-center lg:justify-start">
             <Button className="mt-6 px-16 py-7 rounded-2xl bg-gradient-to-r from-purple-400 to-purple-600 hover:from-purple-500 hover:to-purple-700 transition-all duration-300 ease-in-out transform hover:scale-105 flex items-center">
               <a href="https://drive.google.com/file/d/16TiqhbGnCh3veV7H4HZuxFZ2V6Wo82AN/view?usp=sharing" className="font-semibold font-sans text-xl text-white">
@@ -64,24 +74,26 @@ const words = ['Fullstack Developer', 'Frontend Developer', 'Backend Developer',
 
       
       </section>
-
+      
       {/* SKILLS  */}
       <section id="skills">  
         <Skills />
       </section>
 
       {/* Projects  */}
+      
       <section id="projects" className="py-12 ">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-semibold text-gray-800 dark:text-gray-200 animate-fade-in">Top Projects</h2>
+            <h2 className="text-4xl font-semibold text-gray-800 dark:text-gray-200 animate-fade-in"><Cover>Top Projects</Cover></h2>
             <p className="mt-4 text-lg text-gray-500 dark:text-gray-300 animate-fade-in">A showcase of my best work</p>
           </div>
           <div className="flex flex-wrap justify-center">
 
-
-            {/* <!-- Project 1 --> */}
             
+              
+                
+            {/* <!-- Project 1 --> */}
             <div className="w-full max-w-sm mx-4 my-4 rounded-xl shadow-lg dark:bg-gray-900 transform transition-transform duration-500 hover:scale-105 hover:shadow-xl">
               <div className="p-6">
                 <div className="flex items-center justify-center mb-4 rounded-xl">
@@ -114,6 +126,8 @@ const words = ['Fullstack Developer', 'Frontend Developer', 'Backend Developer',
                 </div>
               </div>
             </div>
+            
+           
             {/* <!-- Project 2 --> */}
             <div className="w-full max-w-sm mx-4 my-4  dark:bg-gray-900 rounded-lg shadow-2xl dar9:bg-gray-800 transform transition-transform duration-500 hover:scale-105 hover:shadow-3xl">
               <div className="p-6">
@@ -146,6 +160,8 @@ const words = ['Fullstack Developer', 'Frontend Developer', 'Backend Developer',
                 </div>
               </div>
             </div>
+            
+             
             {/* <!-- Project 3 --> */}
             <div className="w-full max-w-sm mx-4 my-4  dark:bg-gray-900 rounded-lg shadow-2xl dar9:bg-gray-800 transform transition-transform duration-500 hover:scale-105 hover:shadow-3xl">
               <div className="p-6">
@@ -177,6 +193,8 @@ const words = ['Fullstack Developer', 'Frontend Developer', 'Backend Developer',
                 </div>
               </div>
             </div>
+             
+             
             <div className="w-full max-w-sm mx-4 my-4  rounded-lg shadow-2xl dark:bg-gray-900 transform transition-transform duration-500 hover:scale-105 hover:shadow-3xl">
               <div className="p-6">
                 <div className="flex items-center justify-center mb-4">
@@ -204,6 +222,8 @@ const words = ['Fullstack Developer', 'Frontend Developer', 'Backend Developer',
                 </div>
               </div>
             </div>
+            
+             
             <div className="w-full max-w-sm mx-4 my-4  rounded-lg shadow-2xl dark:bg-gray-900 transform transition-transform duration-500 hover:scale-105 hover:shadow-3xl">
               <div className="p-6">
                 <div className="flex items-center justify-center mb-4">
@@ -231,7 +251,10 @@ const words = ['Fullstack Developer', 'Frontend Developer', 'Backend Developer',
                   </Button>
                 </div>
               </div>
-            </div>    
+            </div>  
+              
+        
+            
           </div>
         </div>
 

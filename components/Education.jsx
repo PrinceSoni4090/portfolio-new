@@ -1,10 +1,11 @@
 import React from 'react';
+import { Cover } from './ui/cover';
 
 const Education = () => {
   return (
     <section className="py-10 bg-gradient-to-b  ">
       <div className="max-w-5xl mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-6">Education</h2>
+        <h2 className="text-4xl font-bold text-center mb-6"><Cover>Education</Cover></h2>
         <p className="text-center text-lg mb-12">My education has been a journey of self-discovery and growth. My educational details are as follows.</p>
 
         <div className="space-y-8">
@@ -19,7 +20,7 @@ const Education = () => {
             <p className="text-sm ">Oct 2020 - Sep 2024</p>
             <p className="font-medium text-purple-500 mt-2">Grade: 8.4 CGPA</p>
             <p className="mt-4 text-300">
-            I have completed a Bachelor's degree in Computer Science and Engineering from Lakhmi Chand Institute of Technology, Bilaspur. I have completed with a CGPA of 8.71. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, etc.
+            I have completed a Bachelor's degree in Computer Science and Engineering from Lakhmi Chand Institute of Technology, Bilaspur. I have completed with a CGPA of 8.44. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, etc.
             </p>
           </div>
 

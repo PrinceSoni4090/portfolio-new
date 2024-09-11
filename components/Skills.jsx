@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import skillsdata from './skillsdata';
-
+import { Cover } from './ui/cover';
 
 const Container = styled.div`
   display: flex;
@@ -131,8 +131,8 @@ const Skills = () => {
   return (
     <Container id="skills">
       <Wrapper>
-        <Title>Skills</Title>
-        <Desc>Here are some of my skills on which I have been working on for the past 2 years.</Desc>
+        <Title> <Cover>Skills</Cover></Title>
+        <Desc>Here are some of my skills on which I have been working on for few years.</Desc>
         <SkillsContainer>
         
           {skillsdata.map((skill) => (
