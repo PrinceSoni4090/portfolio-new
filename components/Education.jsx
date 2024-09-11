@@ -20,7 +20,7 @@ const Education = () => {
             <p className="text-sm ">Oct 2020 - Sep 2024</p>
             <p className="font-medium text-purple-500 mt-2">Grade: 8.4 CGPA</p>
             <p className="mt-4 text-300">
-            I have completed a Bachelor's degree in Computer Science and Engineering from Lakhmi Chand Institute of Technology, Bilaspur. I have completed with a CGPA of 8.44. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, etc.
+            I have completed my Bachelor degree in Computer Science and Engineering from Lakhmi Chand Institute of Technology, Bilaspur. I have completed with a CGPA of 8.44. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, etc.
             </p>
           </div>
 

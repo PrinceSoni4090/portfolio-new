@@ -35,7 +35,7 @@ export default function Home() {
 
 const words = ['Fullstack Developer', 'Frontend Developer', 'Backend Developer', 'Software Engineer', 'Fullstack Developer']
 
-const para = `skilled in Next JS, React JS, typeScript. My expertise includes building responsive, high-quality web applications and managing databases. I have a strong foundation in deploying live projects, writing clean code, and following best practices. Currently, I’m seeking new opportunities to contribute to a dynamic team and deliver outstanding web solutions.`;
+const para = `skilled in Next JS, React JS, typeScript. My expertise includes building responsive, high-quality web applications and managing databases. I have a strong foundation in deploying live projects, writing clean code, and following best practices. Currently, I&apos;m seeking new opportunities to contribute to a dynamic team and deliver outstanding web solutions.`;
   return (
     <main>
 
@@ -59,7 +59,7 @@ const para = `skilled in Next JS, React JS, typeScript. My expertise includes bu
           </h1>
           <h1 className="text-3xl leading-snug text-gray-800 dark:text-gray-200 md:text-4xl">
             {/* I'm a <span ref={el} /> */}
-           <span>I'm a</span> <FlipWords words= {words} />
+           <span>I&apos;m a</span> <FlipWords words= {words} />
           </h1>
           <div className="mt-4 text-lg text-gray-500 dark:text-gray-300">
           <TextGenerateEffect words={para} />
