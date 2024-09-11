@@ -42,15 +42,16 @@ const para = `skilled in Next JS, React JS, typeScript. My expertise includes bu
       {/*  About */}
       <section id="about" className="container px-4 py-12 mx-auto lg:h-128 lg:space-x-8 lg:flex lg:items-center md:px-16 md:py-20">
       
-        <div className="w-full mt-4 lg:mt-0 lg:w-1/2 lg:order-2">
-          <Image
-            src="/HeroImage1.jpg"
-            alt="John Doe"
-            width={350}
-            height={350}
-            className="w-full h-full max-w-xs mx-auto border-2 border-purple-500 rounded-full"
-          />
-        </div>
+       <div className="w-full mt-4 lg:mt-0 lg:w-1/2 lg:order-2">
+  <Image
+    src="/HeroImage1.jpg"
+    alt="John Doe"
+    width={350}
+    height={350}
+    className="w-full h-full max-w-xs mx-auto border-2 border-purple-500 rounded-full shadow-lg transition-transform duration-300 ease-in-out hover:shadow-2xl hover:scale-105"
+    style={{ borderRadius: '50%', boxShadow: '0 0 10px 4px rgba(128, 0, 128, 0.5)' }}
+  />
+</div>
 
         <div className="w-full text-center lg:text-left lg:w-1/2 lg:order-1 lg:-mt-8 mt-8 lg:mt-0">
           <h1 className=" text-4xl md:text-4xl lg:text-6xl font-semibold relative z-20bg-clip-text text-transparent bg-gradient-to-b font-bold text-3xl leading-snug  md:text-4xl">
@@ -81,7 +82,6 @@ const para = `skilled in Next JS, React JS, typeScript. My expertise includes bu
       </section>
 
       {/* Projects  */}
-      
       <section id="projects" className="py-12 ">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
@@ -264,7 +264,6 @@ const para = `skilled in Next JS, React JS, typeScript. My expertise includes bu
       <section id="education">
         <Education />
       </section>
-
 
       {/* Footer  */}
       <section>
