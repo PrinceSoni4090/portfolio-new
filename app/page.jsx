@@ -35,7 +35,7 @@ export default function Home() {
 
   const words = ['Fullstack Developer', 'Frontend Developer', 'Backend Developer', 'Software Engineer', 'Fullstack Developer']
 
-  const para = `skilled in Next JS, React JS, typeScript. My expertise includes building responsive, high-quality web applications and managing databases. I have a strong foundation in deploying live projects, writing clean code, and following best practices. Currently, I&apos;m seeking new opportunities to contribute to a dynamic team and deliver outstanding web solutions.`;
+  const para = `skilled in Next JS, React JS, typeScript. My expertise includes building responsive, high-quality web applications and managing databases. I have a strong foundation in deploying live projects, writing clean code, and following best practices. Currently, seeking new opportunities to contribute to a dynamic team and deliver outstanding web solutions.`;
   return (
     <main>
 
